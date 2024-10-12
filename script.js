@@ -37,10 +37,10 @@ function Updatecity(event) {
           <div class="time">${citytime.format(
             "hh:mm:ss"
           )} <small>${citytime.format("A")} </small></div>
-        </div>`;
+        </div>
+        <a href="index.html">Back to All cities</a>`;
 }
 UpdateTime();
 setInterval(UpdateTime, 1000);
-
 let selectCity = document.querySelector("#city");
 selectCity.addEventListener("change", Updatecity);
